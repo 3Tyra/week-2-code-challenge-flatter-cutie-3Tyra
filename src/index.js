@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
 
     const characterId = document.getElementById('detailed-info').getAttribute('data-character-id');
-    const votesToAdd = +document.getElementById('votes').value;
+    const votesToAdd = parseInt(document.getElementById('votes').value);  
 
 
     if (isNaN(votesToAdd)) {
