@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.getElementById('vote-count').textContent = newVoteCount;
 
+       event.target.reset()
       });
   });
 
@@ -67,5 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     document.getElementById('vote-count').textContent = 0;
+
   });
 });
