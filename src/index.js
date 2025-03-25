@@ -58,12 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.getElementById('vote-count').textContent = newVoteCount;
 
-       
-        fetch(`https://flactuaries-tyra.vercel.app/characters/${characterId}`, {
-          method: 'PATCH',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ votes: newVoteCount })
-        });
       });
   });
 
@@ -73,12 +67,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     document.getElementById('vote-count').textContent = 0;
-
-    
-    fetch(`https://flactuaries-tyra.vercel.app/characters/${characterId}`, {
-      method: 'PATCH',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ votes: 0 })
-    });
   });
 });
